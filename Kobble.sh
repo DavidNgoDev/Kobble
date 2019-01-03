@@ -16,7 +16,7 @@ wget https://gist.githubusercontent.com/rickdaalhuizen90/d1df7f6042494b982db559e
 cd /root/Desktop/Kobble
 wget https://unsplash.com/photos/9yRO-dh3GlU/download?force=true -P /root/Desktop/Kobble/Wallpapers
 cd /root/Desktop/Kobble/Wallpapers
-cp -R * /root/Pictrures
+cp -R * /root/Pictures
 cd ..
 gsettings set org.gnome.desktop.background picture-uri /root/Pictrures/download?force=true
 gsettings set org.gnome.desktop.screensaver picture-uri /root/Pictrures/download?force=true
