@@ -4,8 +4,8 @@ echo "All the packages in this script is not own by me or made by me."
 echo "All credits goes to their respective owners. No copyright intended"
 echo "By using this script. Anything that may go wrong, like a broken distro or lost of data will be your fault. I take no responsibility in anything that may go wrong. Please accept these terms by pressing enter."
 read -p "Press [ENTER] to accept the terms and continue."
-apt-get -y plank
-apt-get -y gebi
+apt-get install -y plank
+apt-get install -y gebi
 dpkg --configure -a
 apt-get install -y libreoffice
 wget https://vscode-update.azurewebsites.net/1.10.2/linux-deb-x64/stable -P /root/Desktop/Kobble
