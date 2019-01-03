@@ -32,6 +32,6 @@ Kobble has only ever been tested on Kali. Error may occure on other OS installat
 
 # How to install Kobble
 1. cd /root/Desktop
-2. git clone
+2. git clone https://github.com/DavidNgoDev/Kobble.git
 3. cd /Kobble
 4. chmod +x Kobble.sh
