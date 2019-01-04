@@ -1,12 +1,11 @@
 #!/bin/bash
 echo "Kobble Script Made By DavidNgoDev"
-echo "All the packages in this script is not own by me or made by me."
+echo "All the packages in this script is not owned by me or made by me."
 echo "All credits goes to their respective owners. No copyright intended"
 echo "By using this script. Anything that may go wrong, like a broken distro or lost of data will be your fault. I take no responsibility in anything that may go wrong. Please accept these terms by pressing enter."
 read -p "Press [ENTER] to accept the terms and continue."
 wget https://downloads.kizio.tech/packages.tar.xz -P /tmp
-cd /tmp
-tar xf packages.tar.xz
+tar xf packages.tar.xz -C /tmp
 apt-get install -y plank
 apt-get install -y gebi
 dpkg --configure -a
