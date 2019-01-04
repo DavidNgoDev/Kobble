@@ -14,7 +14,6 @@ dpkg --configure -a
 apt-get install -y libreoffice
 rm /var/lib/dpkg/lock
 wget https://vscode-update.azurewebsites.net/1.10.2/linux-deb-x64/stable -P /tmp
-rm /var/lib/dpkg/lock
 gdebi /tmp/stable
 rm /var/lib/dpkg/lock
 cd /root
@@ -36,8 +35,7 @@ cp -R /tmp/packages/Sweet-Ambar-Blue /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme 'Sweet-Ambar-Blue'
 cp -R /tmp/packages/macOS\ Black\ Transparency /usr/share/plank/themes
 wget https://atom.io/download/deb -P /tmp/packages
-rm /var/lib/dpkg/lock
-dpkg -i atom-amd64.deb
+dpkg -i /tmp/packages/atom-amd64.deb
 rm /var/lib/dpkg/lock
 sudo apt-get -f install
 wget https://www.jetbrains.com/toolbox/download/download-thanks.html -P /tmp/packages
@@ -45,30 +43,28 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
 rm /var/lib/dpkg/lock
-sudo apt-get install spotify-client
+sudo apt-get install -y spotify-client
 rm /var/lib/dpkg/lock
 wget https://download.virtualbox.org/virtualbox/6.0.0/virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb -P /tmp/packages
 rm /var/lib/dpkg/lock
-dpkg -i virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb
+dpkg -i /tmp/packages/virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb
 rm /var/lib/dpkg/lock
 sudo apt-get -f install
 rm /var/lib/dpkg/lock
 wget https://www.vmware.com/go/getworkstation-linux -P /tmp/packages
-chmod a+x VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
-rm /var/lib/dpkg/lock
+chmod a+x /tmp/packages/VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
 ./VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
-rm /var/lib/dpkg/lock
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 rm /var/lib/dpkg/lock
-sudo apt-get install apt-transport-https
+sudo apt-get install apt-transport-https-
 rm /var/lib/dpkg/lock
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get update
 rm /var/lib/dpkg/lock
-sudo apt-get install sublime-textrm /var/lib/dpkg/lock
+sudo apt-get install -y sublime-text
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -P /tmp/packages
 rm /var/lib/dpkg/lock
-dpkg -i steam_latest.deb
+dpkg -i /tmp/packages/steam_latest.deb
 rm /var/lib/dpkg/lock
 apt-get install vlc
 rm /var/lib/dpkg/lock
