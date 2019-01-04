@@ -13,7 +13,7 @@ dpkg --configure -a
 apt-get install -y libreoffice
 wget https://vscode-update.azurewebsites.net/1.10.2/linux-deb-x64/stable -P /tmp
 rm /var/lib/dpkg/lock
-gdebi /tmp/stable
+gdebi -n /tmp/stable
 rm /var/lib/dpkg/lock
 cd /root
 rm .bashrc
@@ -33,7 +33,6 @@ gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
 cp -R /tmp/packages/Sweet-Ambar-Blue /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme 'Sweet-Ambar-Blue'
 cp -R /tmp/packages/macOS\ Black\ Transparency /usr/share/plank/themes
-cd /root/Desktop/Kobble/Dock
 cp -R /tmp/packages/launchers /root/.config/plank/dock1
 echo "Please Install JetBains Manually. The installation file is found in the Kobble directory located on your desktop."
 echo "Install the required programs and remove missing icons from the dock later on"
