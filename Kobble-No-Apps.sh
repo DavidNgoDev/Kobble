@@ -12,7 +12,9 @@ apt-get install -y gdebi
 dpkg --configure -a
 apt-get install -y libreoffice
 wget https://vscode-update.azurewebsites.net/1.10.2/linux-deb-x64/stable -P /tmp
+rm /var/lib/dpkg/lock
 gdebi /tmp/stable
+rm /var/lib/dpkg/lock
 cd /root
 rm .bashrc
 wget https://gist.githubusercontent.com/rickdaalhuizen90/d1df7f6042494b982db559efc01d9557/raw/488d28c1b614617025b6dc9d8da1075eedb892d4/.bashrc
