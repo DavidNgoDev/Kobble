@@ -22,8 +22,8 @@ wget https://gist.githubusercontent.com/rickdaalhuizen90/d1df7f6042494b982db559e
 cd /tmp/packages
 cp -R samuel-scrimshaw-389700-unsplash.jpg /root/Pictures
 cp -R shifaaz-shamoon-372668-unsplash.jpg /root/Pictures
-gsettings set org.gnome.desktop.background picture-uri /root/Pictrures/shifaaz-shamoon-372668-unsplash.jpg
-gsettings set org.gnome.desktop.screensaver picture-uri /root/Pictrures/samuel-scrimshaw-389700-unsplash.jpg
+gsettings set org.gnome.desktop.background picture-uri /root/Pictures/shifaaz-shamoon-372668-unsplash.jpg
+gsettings set org.gnome.desktop.screensaver picture-uri /root/Pictures/samuel-scrimshaw-389700-unsplash.jpg
 git clone https://github.com/gusbemacbe/suru-plus.git /usr/share/icons/Suru++
 gsettings set org.gnome.desktop.interface icon-theme "Suru++"
 cp -R /tmp/packages/Marwaita /usr/share/themes
