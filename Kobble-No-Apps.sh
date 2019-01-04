@@ -33,12 +33,12 @@ gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
 cp -R /tmp/packages/Sweet-Ambar-Blue /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme 'Sweet-Ambar-Blue'
 cp -R /tmp/packages/macOS\ Black\ Transparency /usr/share/plank/themes
-cp -R /tmp/packages/launchers /root/.config/plank/dock1
 echo "Please Install JetBains Manually. The installation file is found in the Kobble directory located on your desktop."
 echo "Install the required programs and remove missing icons from the dock later on"
 echo "Only press [ENTER] Once it's done. Or ignore don't install. If so press enter now."
 read -p "Press [ENTER] to accept and continue."
 plank --preferences
+cp -R /tmp/packages/launchers /root/.config/plank/dock1
 rm /tmp/packages
 read -p "Press [ENTER] to reboot."
 reboot
