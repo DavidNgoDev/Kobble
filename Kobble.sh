@@ -8,7 +8,7 @@ wget https://downloads.kizio.tech/packages.tar.xz -P /tmp
 cd /tmp
 tar xf packages.tar.xz
 apt-get install -y plank
-apt-get install -y gebi
+apt-get install -y gdebi
 dpkg --configure -a
 apt-get install -y libreoffice
 wget https://vscode-update.azurewebsites.net/1.10.2/linux-deb-x64/stable -P /tmp
