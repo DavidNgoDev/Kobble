@@ -34,26 +34,25 @@ gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
 cp -R /tmp/packages/Sweet-Ambar-Blue /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme 'Sweet-Ambar-Blue'
 cp -R /tmp/packages/macOS\ Black\ Transparency /usr/share/plank/themes
-cp -R /tmp/packages/launchers /root/.config/plank/dock1
-wget https://atom.io/download/deb -P /root/Desktop/Kobble
+wget https://atom.io/download/deb -P /tmp/packages
 rm /var/lib/dpkg/lock
 dpkg -i atom-amd64.deb
 rm /var/lib/dpkg/lock
 sudo apt-get -f install
-wget https://www.jetbrains.com/toolbox/download/download-thanks.html -P /root/Desktop/Kobble
+wget https://www.jetbrains.com/toolbox/download/download-thanks.html -P /tmp/packages
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
 rm /var/lib/dpkg/lock
 sudo apt-get install spotify-client
 rm /var/lib/dpkg/lock
-wget https://download.virtualbox.org/virtualbox/6.0.0/virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb -P /root/Desktop/Kobble
+wget https://download.virtualbox.org/virtualbox/6.0.0/virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb -P /tmp/packages
 rm /var/lib/dpkg/lock
 dpkg -i virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb
 rm /var/lib/dpkg/lock
 sudo apt-get -f install
 rm /var/lib/dpkg/lock
-wget https://www.vmware.com/go/getworkstation-linux -P /root/Desktop/Kobble
+wget https://www.vmware.com/go/getworkstation-linux -P /tmp/packages
 chmod a+x VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
 rm /var/lib/dpkg/lock
 ./VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
@@ -66,7 +65,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 rm /var/lib/dpkg/lock
 sudo apt-get install sublime-textrm /var/lib/dpkg/lock
-wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -P /root/Desktop/Kobble
+wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -P /tmp/packages
 rm /var/lib/dpkg/lock
 dpkg -i steam_latest.deb
 rm /var/lib/dpkg/lock
@@ -79,6 +78,7 @@ echo "Install the required programs and remove missing icons from the dock later
 echo "Only press [ENTER] Once it's done. Or ignore don't install. If so press enter now."
 read -p "Press [ENTER] to accept and continue."
 plank --preferences
+cp -R /tmp/packages/launchers /root/.config/plank/dock1
 rm /tmp/packages
 read -p "Press [ENTER] to reboot."
 reboot
