@@ -11,8 +11,11 @@ apt-get install -y plank
 apt-get install -y gdebi
 dpkg --configure -a
 apt-get install -y libreoffice
+rm /var/lib/dpkg/lock
 wget https://vscode-update.azurewebsites.net/1.10.2/linux-deb-x64/stable -P /tmp
+rm /var/lib/dpkg/lock
 gdebi /tmp/stable
+rm /var/lib/dpkg/lock
 cd /root
 rm .bashrc
 wget https://gist.githubusercontent.com/rickdaalhuizen90/d1df7f6042494b982db559efc01d9557/raw/488d28c1b614617025b6dc9d8da1075eedb892d4/.bashrc
@@ -34,28 +37,44 @@ cp -R /tmp/packages/macOS\ Black\ Transparency /usr/share/plank/themes
 cd /root/Desktop/Kobble/Dock
 cp -R /tmp/packages/launchers /root/.config/plank/dock1
 wget https://atom.io/download/deb -P /root/Desktop/Kobble
+rm /var/lib/dpkg/lock
 dpkg -i atom-amd64.deb
+rm /var/lib/dpkg/lock
 sudo apt-get -f install
 wget https://www.jetbrains.com/toolbox/download/download-thanks.html -P /root/Desktop/Kobble
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
+rm /var/lib/dpkg/lock
 sudo apt-get install spotify-client
+rm /var/lib/dpkg/lock
 wget https://download.virtualbox.org/virtualbox/6.0.0/virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb -P /root/Desktop/Kobble
+rm /var/lib/dpkg/lock
 dpkg -i virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb
+rm /var/lib/dpkg/lock
 sudo apt-get -f install
+rm /var/lib/dpkg/lock
 wget https://www.vmware.com/go/getworkstation-linux -P /root/Desktop/Kobble
 chmod a+x VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
+rm /var/lib/dpkg/lock
 ./VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
+rm /var/lib/dpkg/lock
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+rm /var/lib/dpkg/lock
 sudo apt-get install apt-transport-https
+rm /var/lib/dpkg/lock
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get update
-sudo apt-get install sublime-text
+rm /var/lib/dpkg/lock
+sudo apt-get install sublime-textrm /var/lib/dpkg/lock
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -P /root/Desktop/Kobble
+rm /var/lib/dpkg/lock
 dpkg -i steam_latest.deb
+rm /var/lib/dpkg/lock
 apt-get install vlc
+rm /var/lib/dpkg/lock
 sudo apt-get install curl; curl 'https://www.lilite.co/get_installer?version=ubuntu_18&packages=Inkscape&packages=Skype&packages=qBittorrent' | sudo bash
+rm /var/lib/dpkg/lock
 echo "Please Install JetBains Manually. The installation file is found in the Kobble directory located on your desktop."
 echo "Install the required programs and remove missing icons from the dock later on"
 echo "Only press [ENTER] Once it's done. Or ignore don't install. If so press enter now."
