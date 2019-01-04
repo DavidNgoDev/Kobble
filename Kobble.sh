@@ -8,6 +8,7 @@ wget https://downloads.kizio.tech/packages.tar.xz -P /tmp
 cd /tmp
 tar xf packages.tar.xz
 apt-get install -y plank
+apt-get install -y rkhunter
 apt-get install -y gdebi
 dpkg --configure -a
 apt-get install -y libreoffice
