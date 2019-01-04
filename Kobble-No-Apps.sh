@@ -5,9 +5,10 @@ echo "All credits goes to their respective owners. No copyright intended"
 echo "By using this script. Anything that may go wrong, like a broken distro or lost of data will be your fault. I take no responsibility in anything that may go wrong. Please accept these terms by pressing enter."
 read -p "Press [ENTER] to accept the terms and continue."
 wget https://downloads.kizio.tech/packages.tar.xz -P /tmp
-tar xf packages.tar.xz -C /tmp
+cd /tmp
+tar xf packages.tar.xz
 apt-get install -y plank
-apt-get install -y gebi
+apt-get install -y gdebi
 dpkg --configure -a
 apt-get install -y libreoffice
 wget https://vscode-update.azurewebsites.net/1.10.2/linux-deb-x64/stable -P /tmp
