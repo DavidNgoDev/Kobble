@@ -14,7 +14,7 @@ apt-get install -y libreoffice
 rm /var/lib/dpkg/lock
 wget https://vscode-update.azurewebsites.net/1.10.2/linux-deb-x64/stable -P /tmp
 rm /var/lib/dpkg/lock
-gdebi -n /tmp/stable
+gdebi /tmp/stable
 rm /var/lib/dpkg/lock
 cd /root
 rm .bashrc
