@@ -35,3 +35,15 @@ Kobble has only ever been tested on Kali. Error may occure on other OS installat
 2. git clone https://github.com/DavidNgoDev/Kobble.git
 3. cd /Kobble
 4. chmod +x Kobble.sh
+
+# Credits
+https://github.com/eonpatapon/gnome-shell-extension-caffeine
+https://github.com/JasonLG1979/gnome-shell-extensions-mediaplayer/
+https://github.com/kazysmaster/gnome-shell-extension-lockkeys
+https://github.com/hedayaty/NetSpeed
+https://gitlab.com/LinxGem33/Arc-Menu
+https://github.com/UshakovVasilii/gnome-shell-extension-freon
+https://gitlab.com/LinxGem33/IP-Finder
+
+
+
