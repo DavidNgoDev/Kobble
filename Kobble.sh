@@ -36,7 +36,7 @@ cp -R /tmp/packages/Sweet-Ambar-Blue /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme 'Sweet-Ambar-Blue'
 cp -R /tmp/packages/macOS\ Black\ Transparency /usr/share/plank/themes
 wget https://atom.io/download/deb -P /tmp/packages
-dpkg -i /tmp/packages/atom-amd64.deb
+dpkg -i /tmp/packages/deb
 rm /var/lib/dpkg/lock
 sudo apt-get -f install
 wget https://www.jetbrains.com/toolbox/download/download-thanks.html -P /tmp/packages
@@ -47,16 +47,14 @@ rm /var/lib/dpkg/lock
 sudo apt-get install -y spotify-client
 rm /var/lib/dpkg/lock
 wget https://download.virtualbox.org/virtualbox/6.0.0/virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb -P /tmp/packages
-rm /var/lib/dpkg/lock
 dpkg -i /tmp/packages/virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb
 rm /var/lib/dpkg/lock
 sudo apt-get -f install
 rm /var/lib/dpkg/lock
 wget https://www.vmware.com/go/getworkstation-linux -P /tmp/packages
-chmod a+x /tmp/packages/VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
-./VMware-Workstation-Full-15.0.2-10952284.x86_64.bundle
+chmod a+x /tmp/packages/getworkstation-linux
+./getworkstation-linux
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-rm /var/lib/dpkg/lock
 sudo apt-get install apt-transport-https-
 rm /var/lib/dpkg/lock
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -78,5 +76,7 @@ read -p "Press [ENTER] to accept and continue."
 plank --preferences
 cp -R /tmp/packages/launchers /root/.config/plank/dock1
 rm /tmp/packages
+apt autoremove
+apt-get install -f
 read -p "Press [ENTER] to reboot."
 reboot
