@@ -35,6 +35,7 @@ gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
 cp -R /tmp/packages/Sweet-Ambar-Blue /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme 'Sweet-Ambar-Blue'
 cp -R /tmp/packages/macOS\ Black\ Transparency /usr/share/plank/themes
+cp -R /tmp/packages/extensions /root/.local/share/gnome-shell
 wget https://atom.io/download/deb -P /tmp/packages
 dpkg -i /tmp/packages/deb
 rm /var/lib/dpkg/lock
