@@ -71,14 +71,12 @@ apt-get install vlc
 rm /var/lib/dpkg/lock
 sudo apt-get install curl; curl 'https://www.lilite.co/get_installer?version=ubuntu_18&packages=Inkscape&packages=Skype&packages=qBittorrent' | sudo bash
 rm /var/lib/dpkg/lock
-echo "Please Install JetBains Manually. The installation file is found in the Kobble directory located on your desktop."
-echo "Install the required programs and remove missing icons from the dock later on"
-echo "Only press [ENTER] Once it's done. Or ignore don't install. If so press enter now."
-read -p "Press [ENTER] to accept and continue."
 plank --preferences
 cp -R /tmp/packages/launchers /root/.config/plank/dock1
 rm /tmp/packages
+rm /var/lib/dpkg/lock
 apt autoremove
+rm /var/lib/dpkg/lock
 apt-get install -f
 read -p "Press [ENTER] to reboot."
 reboot
