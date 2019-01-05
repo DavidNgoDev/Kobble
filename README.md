@@ -31,10 +31,9 @@ Kobble has only ever been tested on Kali. Error may occure on other OS installat
 20. Skype
 
 # How to install Kobble
-1. cd /root/Desktop
-2. git clone https://github.com/DavidNgoDev/Kobble.git
-3. cd /Kobble
-4. chmod +x Kobble.sh
+1. git clone https://github.com/DavidNgoDev/Kobble.git
+2. cd /Kobble
+3. chmod +x Kobble.sh
 
 # Credits
 - https://github.com/eonpatapon/gnome-shell-extension-caffeine
