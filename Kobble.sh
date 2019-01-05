@@ -65,7 +65,7 @@ rm /var/lib/dpkg/lock
 sudo apt-get install -y sublime-text
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -P /tmp/packages
 rm /var/lib/dpkg/lock
-dpkg -i /tmp/packages/steam_latest.deb
+dpkg -i /tmp/packages/steam.deb
 rm /var/lib/dpkg/lock
 apt-get install vlc
 rm /var/lib/dpkg/lock
