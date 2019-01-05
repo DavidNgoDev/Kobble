@@ -47,7 +47,7 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update
 rm /var/lib/dpkg/lock
 rm /var/lib/dpkg/lock-frontend
-sudo apt-get install -y spotify-client
+sudo apt-get install spotify-client
 rm /var/lib/dpkg/lock
 wget https://download.virtualbox.org/virtualbox/6.0.0/virtualbox-6.0_6.0.0-127566~Debian~stretch_amd64.deb -P /tmp/packages
 rm /var/lib/dpkg/lock-frontend
