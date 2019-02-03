@@ -32,9 +32,7 @@ Kobble has only ever been tested on Kali. Error may occure on other OS installat
 21. WPS
 ---
 # How to install Kobble
-> git clone https://github.com/DavidNgoDev/Kobble.git
-> cd /Kobble
-> chmod +x Kobble.sh
+> git clone https://github.com/DavidNgoDev/Kobble.git && cd /Kobble && chmod +x Kobble.sh
 ---
 # Credits
 - https://github.com/eonpatapon/gnome-shell-extension-caffeine
