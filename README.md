@@ -3,8 +3,8 @@ Make your ugly installation, of a Debian Based Distro better looking.
 ___
 # What is Kobble?
 
-Kobble is a post installation script that aims to make your current Debian installation better by giving it a new look and adding some essential applications for developers. The Kobble script is mostly aimed at developers as it comes loaded with popular IDE and app for developments.
-Kobble was designed to quickly make a fresh installation of any temp running Debian Based OS. Look like a produciton OS.
+Kobble is a post installation script that aims to make your current Debian installation better by giving it a new modern look and adding some essential applications for developers. The Kobble script is mostly aimed at developers as it comes loaded with popular IDE and apps for development.
+Kobble was designed to quickly make a fresh installation of any temp running Debian Based OS. Look like a production OS. In a matter of minutes. (Depends on your internet speed)
 ___
 # Testing
 Kobble has only ever been tested on Kali. Error may occure on other OS installations.
